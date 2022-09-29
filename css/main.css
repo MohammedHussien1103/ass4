@@ -1,0 +1,316 @@
+h1 {
+   text-align: center;
+   background-color: red;
+}
+
+.elzero {
+   width: 100px;
+   height: 100px;
+   background-color: #eee;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   margin: 20px auto;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   text-align: center;
+   flex-direction: column-reverse;
+   flex-wrap: nowrap;
+   align-content: stretch;
+   box-shadow: 13px 5px 0 0 orange, -14px -1px 0 0 blue;
+}
+
+.parent1 {
+   width: 600px;
+   height: 300px;
+   display: flex;
+   background-color: #eee;
+   margin: 20px auto;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-content: space-between;
+
+}
+
+.son1,
+.son2,
+.son3 {
+   justify-content: flex-start;
+   width: calc(98/3);
+   background-color: red;
+   height: 28px;
+   text-align: center;
+   width: 119px;
+   padding: 20px;
+}
+
+.son4,
+.son5,
+.son6 {
+
+   align-content: flex-end;
+   background-color: red;
+   height: 28px;
+   text-align: center;
+   width: 119px;
+   padding: 20px;
+
+
+}
+
+.parent2 {
+   width: 600px;
+   height: 300px;
+   background-color: #eee;
+   margin: 20px auto;
+   display: flex;
+   align-content: space-between;
+   padding: 20px;
+   flex-direction: row-reverse;
+   flex-wrap: wrap
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+   background-color: darkslateblue;
+   color: white;
+   width: calc(94%/6);
+   height: 50px;
+   align-content: space-between;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+}
+
+.one {
+   margin-right: 8px;
+   order: 6;
+   align-content: space-between;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+   width: 100px;
+}
+
+.two {
+   margin-right: 8px;
+   order: 5;
+
+   align-self: flex-end;
+}
+
+.three {
+   margin-right: 8px;
+   order: 4;
+}
+
+.four {
+   margin-right: 8px;
+   order: 3;
+}
+
+.five {
+   margin-right: 8px;
+   order: 2;
+}
+
+.six {
+   margin-right: 8px;
+   order: 1;
+}
+
+.parent3 {
+   flex-direction: column;
+   background-color: #eee;
+   width: 600px;
+   height: 300px;
+   margin: 20px auto;
+   display: flex;
+   display: flex;
+   align-items: flex-end;
+   align-content: flex-end;
+
+}
+
+.one3,
+.two3,
+.three3 {
+   background-color: green;
+   text-align: center;
+}
+
+.two3 {
+   width: 200px;
+   height: 50px;
+   align-self: flex-start;
+}
+
+.one3 {
+   width: 50px;
+   margin-bottom: 20px;
+   height: 100px;
+
+
+}
+
+.three3 {
+   width: 50px;
+   height: 100px;
+   align-self: flex-end;
+   position: absolute;
+   top: 256%;
+
+}
+
+.parent5 {
+   width: 600px;
+   height: 300px;
+   background-color: #eee;
+   display: flex;
+   margin: 20px auto;
+   text-align: center;
+}
+
+.one5 {
+   background-color: orange;
+   height: 200px;
+   width: 150px;
+   color: white;
+   text-align: center;
+   order: 2;
+   justify-content: center;
+
+
+}
+
+.two5 {
+   background-color: green;
+   height: 200px;
+   width: 150px;
+   color: white;
+   text-align: center;
+   order: 3;
+   align-self: flex-end;
+}
+
+.three5 {
+   background-color: brown;
+   height: 200px;
+   width: 150px;
+   color: white;
+   text-align: center;
+   order: 4;
+}
+
+.four5 {
+   background-color: purple;
+   height: 200px;
+   width: 150px;
+   color: white;
+   text-align: center;
+   order: 1;
+   align-self: flex-end;
+
+}
+
+
+
+
+.page {
+   background-color: #eee;
+   display: flex;
+   flex-direction: column;
+   margin: 20px auto;
+   width: 1000px;
+   height: 900px;
+   flex-wrap: nowrap;
+   justify-content: space-between
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   align-content: stretch;
+   justify-content: space-between;
+   align-items: center;
+   background-color: gray;
+}
+
+.logo {
+   background-color: gray;
+   width: fit-content;
+
+}
+
+.links {
+
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   background-color: gray;
+   flex-direction: row-reverse;
+   width: 158px;
+   display: flex;
+
+}
+
+ul.links li {
+   padding: 10px;
+
+}
+
+.onelink {
+   order: 4;
+}
+
+.twolink {
+   order: 3;
+}
+
+.threelink {
+   order: 2;
+}
+
+.fivelink {
+   order: 1;
+}
+
+.main-area {
+   display: flex;
+   flex-direction: row;
+   align-content: stretch;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.content {
+   background-color: gray;
+   width: 819px;
+   height: 805px;
+
+}
+
+.sidebar {
+   background-color: gray;
+   margin: 10px;
+   width: 148px;
+   height: 796px;
+
+}
+
+.footer {
+   display: flex;
+   flex-direction: row;
+   align-content: stretch;
+   justify-content: space-between;
+   align-items: center;
+   background-color: gray;
+}
